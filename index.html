@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bushra's Surprise Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        .container {
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            animation: slideIn 0.8s ease-out;
+        }
+        
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        h1 {
+            color: #667eea;
+            font-size: 3em;
+            margin-bottom: 20px;
+            animation: bounce 1s ease-in-out;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .emoji {
+            font-size: 4em;
+            display: block;
+            margin: 20px 0;
+        }
+        
+        p {
+            color: #333;
+            font-size: 1.2em;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        
+        .message {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 30px 0;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        .button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 10px;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+        
+        .button:hover {
+            background: #764ba2;
+            transform: scale(1.05);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+        
+        .stars {
+            font-size: 2em;
+            margin: 20px 0;
+            animation: twinkle 1.5s infinite;
+        }
+        
+        @keyframes twinkle {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.3; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>✨ Hello Bushra! ✨</h1>
+        <span class="emoji">🎉</span>
+        
+        <p>Welcome to your special surprise website!</p>
+        
+        <div class="message">
+            This website was created just for you with lots of love and creativity.
+        </div>
+        
+        <p>🌟 You are amazing! 🌟</p>
+        <p>This is your very own space on the web, built with GitHub Pages.</p>
+        
+        <div class="stars">⭐ ✨ 🌟 ✨ ⭐</div>
+        
+        <p style="margin-top: 40px; color: #666; font-size: 0.9em;">
+            Your website is now live at:<br>
+            <strong>https://arman1437.github.io/bushra/</strong>
+        </p>
+        
+        <button class="button" onclick="alert('You are awesome! 🎊')">Click Me!</button>
+    </div>
+</body>
+</html>
